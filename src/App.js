@@ -1,7 +1,16 @@
+import Button from '@mui/material/Button'
+import { fetchAmmoByName } from './axios-servies'
+
 function App() {
   return (
     <div className='App'>
-      <h1>Elden Ring Wiki Clone</h1>
+      <Button
+        size='large'
+        variant='contained'
+        onClick={() => fetchAmmoByName('Firebone Arrow')}
+      >
+        Elden Ring Wiki Clone
+      </Button>
     </div>
   )
 }

@@ -1,7 +1,10 @@
 import axios from 'axios'
+
+// * ----------------------------EldenRingApiCalls------------------------------
+
 const API_URL = `https://eldenring.fanapis.com/api`
 
-//? ------------------------------------ Ammo ----------------------------------
+//* ------------------------------------ Ammo ----------------------------------
 
 export const fetchAllAmmos = async (page = 0) => {
   try {
